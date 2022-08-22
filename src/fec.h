@@ -1,4 +1,11 @@
+#ifdef __cplusplus
+
+extern "C" {
+
+#endif
+
 #pragma once
+
 
 /**
  * zfec -- fast forward error correction library with Python interface
@@ -59,6 +66,13 @@ void fec_decode(const fec_t* code, const gf** inpkts, gf** outpkts, const unsign
 #include <alloca.h>
 #endif
 #endif
+
+#ifdef __cplusplus
+
+}
+
+#endif
+
 
 /**
  * zfec -- fast forward error correction library with Python interface
