@@ -1,3 +1,6 @@
+#ifndef __IEE80211_RADIOTAP_H
+#define __IEE80211_RADIOTAP_H
+
 #include <string.h>
 #include <stdint.h>
 #include <sys/types.h>
@@ -435,3 +438,5 @@ ieee80211_radiotap_iterator_init(struct ieee80211_radiotap_iterator *iterator,
 
 int
 ieee80211_radiotap_iterator_next(struct ieee80211_radiotap_iterator *iterator);
+
+#endif
